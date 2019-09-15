@@ -94,7 +94,7 @@ function createListFromArray(source, seriesModel, opt) {
         dimInfoList[firstCategoryDimIndex].otherDims.itemName = 0;
     }
 
-    var stackCalculationInfo = enableDataStack(seriesModel, dimInfoList);
+    var stackCalculationInfo = enableDataStack(seriesModel, dimInfoList, opt);
 
     var list = new List(dimInfoList, seriesModel);
 

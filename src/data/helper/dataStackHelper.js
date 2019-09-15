@@ -41,7 +41,7 @@ import {each, isString} from 'zrender/src/core/util';
  */
 export function enableDataStack(seriesModel, dimensionInfoList, opt) {
     opt = opt || {};
-    var byIndex = opt.byIndex;
+    var byIndex = opt.byIndex || opt.stack;
     var stackedCoordDimension = opt.stackedCoordDimension;
 
     // Compatibal: when `stack` is set as '', do not stack.
